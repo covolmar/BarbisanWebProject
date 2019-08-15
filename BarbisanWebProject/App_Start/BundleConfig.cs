@@ -23,7 +23,11 @@ namespace BarbisanWebProject
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-Lux.css",
+                      "~/Content/Footer-Dark.css",
+                      "~/Content/Header-Blue.css",
+                      "~/Content/Navigation-with-Button.css",
+                      "~/Content/ionicons.min.css",
                       "~/Content/site.css"));
         }
     }

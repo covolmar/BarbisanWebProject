@@ -15,8 +15,8 @@
 }
 else
 {
-    <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Registrieren", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        <li>@Html.ActionLink("Anmelden", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    <ul class="navbar-nav navbar-right">
+        <li class="nav-item">@Html.ActionLink("Registrieren", "Register", "Account", routeValues: null, htmlAttributes: new { @class = "nav-link", id = "registerLink", style="color:white" })</li>
+        <li class="nav-item">@Html.ActionLink("Anmelden", "Login", "Account", routeValues: null, htmlAttributes: new { @class = "nav-link", id="loginLink", style="color:white" } )</li>
     </ul>
 }
