@@ -10,60 +10,65 @@
 
 </head>
 <body>
-    <img src="~/barbiLogi.jpg" class="img-fluid" alt="Responsive image" />
-    <nav class="navbar navbar-expand-lg navbar-light mt-1 mb-3" style="background-color:#901024">
-        <button class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item active">@Html.ActionLink("Startseite", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" })</li>
-                <li class="nav-item">@Html.ActionLink("Informationen", "About", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" })</li>
-                <li class="nav-item">@Html.ActionLink("Kontakt", "Contact", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" })</li>
-            </ul>
-            @Html.Partial("_LoginPartial")
-        </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        @*<footer>
-                <p>&copy; @DateTime.Now.Year - Barbisan & Brügger AG</p>
-            </footer>*@
-    </div>
-    <div class="footer-dark" style="background-color:#901024">
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-                <p class="copyright">Barbisan & Brügger AG © 2017</p>
-            </div>
-        </footer>
-    </div>
+	<div class="container rounded-lg" id="navbar">
+		<div id="navbarHeaderImage">
+			<img src="~/barbiLogi.jpg" class="shadow-sm img-fluid img-thumbnail rounded-pill" alt="Firmen Logo" />
+		</div>
+		<nav class="navbar navbar-dark navbar-expand-md @*mt-1 mb-3*@">
+			<button class="navbar-toggler rounded" @*style="background-color:white"*@ data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item active">@Html.ActionLink( "Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+					<li class="nav-item">@Html.ActionLink( "Über uns", "About", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+					<li class="nav-item">@Html.ActionLink( "Kontakt", "Contact", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+				</ul>
+				@Html.Partial( "_LoginPartial" )
+			</div>
+		</nav>
+	</div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+	<div class="container body-content">
+		@RenderBody( )
+		@*<hr />*@
+		@*<footer>
+				<p>&copy; @DateTime.Now.Year - Barbisan & Brügger AG</p>
+			</footer>*@
+	</div>
+	<div class="container rounded-lg footer-dark">
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3 item">
+						<h3>Services</h3>
+						<ul>
+							<li><a href="#">Web design</a></li>
+							<li><a href="#">Development</a></li>
+							<li><a href="#">Hosting</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 item">
+						<h3>About</h3>
+						<ul>
+							<li><a href="#">Company</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Careers</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 item text">
+						<h3>Company Name</h3>
+						<p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+					</div>
+					<div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+				</div>
+				<p class="copyright">Barbisan & Brügger AG © @DateTime.Now.Year</p>
+			</div>
+		</footer>
+	</div>
+
+	@Scripts.Render( "~/bundles/jquery" )
+	@Scripts.Render( "~/bundles/bootstrap" )
+	@RenderSection( "scripts", required: false )
 </body>
 </html>

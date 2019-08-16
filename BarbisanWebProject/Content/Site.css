@@ -1,12 +1,15 @@
 ﻿body {
-    padding-top: 0px;
-    padding-bottom: 20px;
+    /*padding-top: 10px;
+    padding-bottom: 10px;*/
+
+	padding: 10px 15px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+	padding: 25px;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -24,12 +27,17 @@ textarea {
 }
 
 
+#navbar {
+	background-color: #901024;
+}
 
-
+#navbarHeaderImage {
+	padding-top:20px;
+}
 
 
 
 /*Boostrap Overrides!*/
 .navbar {
-    padding: 0.5rem 1rem;
+	padding: 0.5rem 1rem;
 }
