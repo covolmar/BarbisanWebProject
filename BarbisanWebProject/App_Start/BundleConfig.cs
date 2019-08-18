@@ -28,6 +28,7 @@ namespace BarbisanWebProject
                       "~/Content/Header-Blue.css",
                       "~/Content/Navigation-with-Button.css",
                       "~/Content/ionicons.min.css",
+                      "~/Content/SchalungselementBox.css",
                       "~/Content/site.css"));
         }
     }
