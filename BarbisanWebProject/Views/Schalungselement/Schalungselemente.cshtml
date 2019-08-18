@@ -4,14 +4,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@*<h3>Schalungselemente</h3>*@
-
+<h3>Schalungselemente</h3>
 <div class="schalungselement-boxed">
     <div class="container">
-        <div class="intro">
-            <h2 class="text-center">Schalungselemente </h2>
-            <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
-        </div>
         <div class="row people">
             <div class="col-md-6 col-lg-4 item">
                 <div class="box">
@@ -21,12 +16,36 @@
                     <p class="description">Trio-Element<br> TR 270 x 240<br></p>
                     <h5 class="name">Miete pro Monat</h5>
                     <p class="description"><strong>Fr. 121.50.-</strong></p>
+
+                    <div class="minusPlus">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="fa fa-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="fa fa-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                   
+
+
                     <button class="btn btn-outline-primary btn-block">Hinzufügen</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/minusPlus")
+}
 
 
 

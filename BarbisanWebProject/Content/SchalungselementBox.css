@@ -88,3 +88,12 @@
   opacity: 1;
 }
 
+.minusPlus {
+    width: 200px;
+    margin: 40px auto;
+}
+
+.minusPlus .input-number {
+   margin: 0px 5px;
+}
+
