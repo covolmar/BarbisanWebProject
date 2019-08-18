@@ -1,8 +1,7 @@
 ﻿body {
     /*padding-top: 10px;
     padding-bottom: 10px;*/
-
-	padding: 10px 15px;
+    padding: 10px 15px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -35,9 +34,12 @@ textarea {
 	padding-top:20px;
 }
 
-
-
+.carousel-item
+{
+    max-width: 1500px;
+    max-height: 500px;
+}
 /*Boostrap Overrides!*/
 .navbar {
-	padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
 }
