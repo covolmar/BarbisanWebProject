@@ -36,9 +36,9 @@ $('.input-number').focusin(function(){
 });
 $('.input-number').change(function() {
     
-    minValue =  parseInt($(this).attr('min'));
-    maxValue =  parseInt($(this).attr('max'));
-    valueCurrent = parseInt($(this).val());
+    var minValue =  parseInt($(this).attr('min'));
+    var maxValue =  parseInt($(this).attr('max'));
+    var valueCurrent = parseInt($(this).val());
     
     name = $(this).attr('name');
     if(valueCurrent >= minValue) {
@@ -53,6 +53,8 @@ $('.input-number').change(function() {
         alert('Sorry, the maximum value was reached');
         $(this).val($(this).data('oldValue'));
     }
+
+    $('.price').text("Fr. " + valueCurrent + ".-");
     
     
 });
