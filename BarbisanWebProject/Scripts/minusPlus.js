@@ -38,7 +38,15 @@ $('.input-number').change(function() {
     
     var minValue =  parseInt($(this).attr('min'));
     var maxValue =  parseInt($(this).attr('max'));
-    var valueCurrent = parseInt($(this).val());
+	var valueCurrent = parseInt($(this).val());
+
+	var id = parseInt($(this).attr('name'));
+	var idString = "#box_" + id;
+
+	var priceString = idString + " .price";
+	var curentValue = $(priceString).html();
+
+	sessionStorage.setItem(idString, curentValue);
     
     name = $(this).attr('name');
     if(valueCurrent >= minValue) {

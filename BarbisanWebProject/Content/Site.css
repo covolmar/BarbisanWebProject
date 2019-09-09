@@ -3,13 +3,9 @@
 }
 
 body {
-	/*padding-top: 10px;
-    padding-bottom: 10px;*/
 	height: 100%;
-	/*padding: 10px 15px;*/
 	background-image: url('../Mauer.JPG');
 	background-attachment: fixed;
-	/*background-size: cover;*/
 	background-repeat: repeat;
 }
 
@@ -17,8 +13,6 @@ body {
 .body-content {
 	padding: 25px;
 	background-color: white;
-    /*padding-left: 15px;
-    padding-right: 15px;*/
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -63,6 +57,34 @@ textarea {
 .header p {
 	color: #901024;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Boostrap Overrides!*/
 .navbar {

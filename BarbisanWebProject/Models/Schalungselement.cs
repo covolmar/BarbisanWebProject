@@ -12,6 +12,7 @@ namespace BarbisanWebProject.Models
         public int Artikelnummer { get; set; }
         public string Name { get; set; }
         public string Bezeichnung { get; set; }
+		public int Preis { get; set; }
 
-    }
+	}
 }
