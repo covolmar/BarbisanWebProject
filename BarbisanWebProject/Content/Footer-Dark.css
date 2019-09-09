@@ -1,7 +1,9 @@
 .footer-dark {
+	/*height: 120px;*/
 	padding: 25px;
 	color: #f0f9ff;
 	background-color:#901024;
+
 }
 
 .footer-dark h3 {

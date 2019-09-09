@@ -11,66 +11,99 @@
 
 </head>
 <body>
-	<div class="container rounded-lg shadow" id="navbar">
-		<div id="navbarHeaderImage">
-			<img src="~/barbiLogi.jpg" class="shadow-sm img-fluid img-thumbnail rounded-pill" alt="Firmen Logo" />
-		</div>
-		<nav class="navbar navbar-dark navbar-expand-md @*mt-1 mb-3*@">
-			<button class="navbar-toggler rounded" @*style="background-color:white"*@ data-toggle="collapse" data-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar-collapse collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">@Html.ActionLink("Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" })</li>
-                    <li class="nav-item">@Html.ActionLink("Über uns", "About", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" })</li>
-                    <li class="nav-item">@Html.ActionLink("Schalungen", "Schalungselemente", "Schalungselement", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" })</li>
-                    <li class="nav-item">@Html.ActionLink("Kontakt", "Contact", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" })</li>
-                </ul>
-				@Html.Partial( "_LoginPartial" )
+	@*<div class="header rounded-lg shadow" id="navbar">
+			<div id="navbarHeaderImage">
+				<img src="~/barbiLogi.jpg" class="shadow-sm img-fluid img-thumbnail rounded-pill" alt="Firmen Logo" />
 			</div>
-		</nav>
+			<nav class="navbar navbar-dark navbar-expand-md">
+				<button class="navbar-toggler rounded" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item active">@Html.ActionLink( "Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+						<li class="nav-item">@Html.ActionLink( "Über uns", "About", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+						<li class="nav-item">@Html.ActionLink( "Schalungen", "Schalungselemente", "Schalungselement", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+						<li class="nav-item">@Html.ActionLink( "Kontakt", "Contact", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+					</ul>
+					@Html.Partial( "_LoginPartial" )
+				</div>
+			</nav>
+		</div>*@
+	<div class="container header">
+		<p>Barbisan und Brügger AG Logo...</p>
+	</div>
+	<nav class="navbar navbar-dark navbar-expand-md shadow-lg sticky-top barbisanColor">
+		@*<a class="navbar-brand" href="#">
+				<img src="~/Logo_Barbi.jpg" class="shadow-sm img-fluid img-thumbnail rounded-pill" alt="Firmen Logo" />
+			</a>*@
+		<button class="navbar-toggler rounded" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item active">@Html.ActionLink( "Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+				<li class="nav-item">@Html.ActionLink( "Über uns", "About", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+				<li class="nav-item">@Html.ActionLink( "Schalungen", "Schalungselemente", "Schalungselement", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+				<li class="nav-item">@Html.ActionLink( "Kontakt", "Contact", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+			</ul>
+			@Html.Partial( "_LoginPartial" )
+		</div>
+	</nav>
+	<div class="container body-content">
+		@*<header>
+				<img src="~/barbiLogi.jpg" class="img-fluid" alt="Firmen Logo" />
+			</header>*@
+		@RenderBody( )
 	</div>
 
-	<div class="container body-content">
-		@RenderBody( )
-		@*<hr />*@
-		@*<footer>
-				<p>&copy; @DateTime.Now.Year - Barbisan & Brügger AG</p>
-			</footer>*@
-	</div>
-	<div class="container rounded-lg footer-dark">
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6 col-md-3 item">
-						<h3>Services</h3>
-						<ul>
-							<li><a href="#">Web design</a></li>
-							<li><a href="#">Development</a></li>
-							<li><a href="#">Hosting</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-6 col-md-3 item">
-						<h3>About</h3>
-						<ul>
-							<li><a href="#">Company</a></li>
-							<li><a href="#">Team</a></li>
-							<li><a href="#">Careers</a></li>
-						</ul>
-					</div>
-					<div class="col-md-6 item text">
-						<h3>Company Name</h3>
-						<p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-					</div>
-					<div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+	<footer class="footer-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 item">
+					<h3>Services</h3>
+					<ul>
+						<li><a href="#">Web design</a></li>
+						<li><a href="#">Development</a></li>
+						<li><a href="#">Hosting</a></li>
+					</ul>
 				</div>
-				<p class="copyright">Barbisan & Brügger AG © @DateTime.Now.Year</p>
+				<div class="col-sm-6 col-md-4 item">
+					<h3>About</h3>
+					<ul>
+						<li><a href="#">Company</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+				</div>
+				@*<div class="col-md-6 item text">
+					<h3>Company Name</h3>
+					<p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+				</div>*@
+			<div class="col-md-4 item text">
+				<h3>Kontakt</h3>
+				<p>
+					Roger Brügger<br />
+					Lindenstrasse 14<br />
+					6340 Baar<br />
+					Mobil: +41 (0)79 642 62 52 <br />
+					Geschäft: +41 (0)41 769 60 00
+				</p>
+				<p>
+					<strong>E-Mail:</strong>   <a style="color: white" href="mailto:info@barbisan-bruegger.ch">info@barbisan-bruegger.ch</a><br />
+				</p>
 			</div>
-		</footer>
-	</div>
+				<div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+			</div>
+			<p class="copyright">Barbisan & Brügger AG © @DateTime.Now.Year</p>
+		</div>
+	</footer>
+
 
 	@Scripts.Render( "~/bundles/jquery" )
 	@Scripts.Render( "~/bundles/bootstrap" )
+	@*@Scripts.Render( "~/bundles/myJs" )*@
+
 	@RenderSection( "scripts", required: false )
 </body>
 </html>

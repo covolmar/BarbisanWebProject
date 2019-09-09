@@ -1,12 +1,22 @@
-﻿body {
-    /*padding-top: 10px;
+﻿html {
+	height: 100%;
+}
+
+body {
+	/*padding-top: 10px;
     padding-bottom: 10px;*/
-    padding: 10px 15px;
+	height: 100%;
+	/*padding: 10px 15px;*/
+	background-image: url('../Mauer.JPG');
+	background-attachment: fixed;
+	/*background-size: cover;*/
+	background-repeat: repeat;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
 	padding: 25px;
+	background-color: white;
     /*padding-left: 15px;
     padding-right: 15px;*/
 }
@@ -26,20 +36,35 @@ textarea {
 }
 
 
-#navbar {
+.barbisanColor {
 	background-color: #901024;
 }
 
-#navbarHeaderImage {
-	padding-top:20px;
+.navbar img{
+	max-height: 100px;
+	max-width: 200px;
 }
 
 .carousel-item
 {
+	background-color: white;
     max-width: 1500px;
     max-height: 500px;
 }
+
+.header {
+	background-color: white;
+	max-width: 100%;
+	/*max-height: 100%;*/
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+.header p {
+	color: #901024;
+}
+
 /*Boostrap Overrides!*/
 .navbar {
-    padding: 0.5rem 1rem;
+	padding: 0.5rem 1rem;
 }
