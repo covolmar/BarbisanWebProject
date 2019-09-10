@@ -1,10 +1,10 @@
-﻿//plugin bootstrap minus and plus
-//http://jsfiddle.net/laelitenetwork/puJ6G/
+﻿"use strict";
+
 $('.btn-number').click(function(e){
     e.preventDefault();
     
-    fieldName = $(this).attr('data-field');
-    type      = $(this).attr('data-type');
+    var fieldName = $(this).attr('data-field');
+    var type      = $(this).attr('data-type');
     var input = $("input[name='"+fieldName+"']");
     var currentVal = parseInt(input.val());
     if (!isNaN(currentVal)) {
@@ -44,7 +44,7 @@ $('.input-number').change(function() {
 	var elementSelectorString = "#box_" + elementId + " .price";
 	var pricePerItem = $(elementSelectorString).attr('data-price');
 
-    name = $(this).attr('name');
+    var name = $(this).attr('name');
     if(valueCurrent >= minValue) {
         $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
     } else {
