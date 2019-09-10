@@ -18,16 +18,31 @@ namespace BarbisanWebProject.Models
         }
     }
 
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
-        }
 
-        public static ApplicationDbContext Create()
+#if DEBUG
+			Database.SetInitializer<ApplicationDbContext>(new DropCreateDatabaseAlways<ApplicationDbContext>());
+#endif
+		}
+
+		public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
-    }
+
+		public DbSet<Schalungselement> Schalungselemente { get; set; }
+		public DbSet<Order> Orders { get; set; }
+		public DbSet<OrderItem> OrderItems { get; set; }
+
+		// furhter application entitiies..
+
+
+
+
+	}
 }
