@@ -1,17 +1,15 @@
 ﻿@model List<BarbisanWebProject.Models.Schalungselement>
 @{
-    ViewBag.Title = "Schalungselemente";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Schalungselemente";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h3>Schalungselemente</h3>
 <div class="schalungselement-boxed">
-    <div class="container">
+	<div class="container">
 		<div class="row elemente">
-
 			@foreach( var schalungsElement in Model )
 			{
-
 				<div class="col-lg-4 item">
 					<div class="box" id="box_@schalungsElement.Id">
 						<img class="img-thumbnail img-fluid" src="~/Pics/TrioPic270x240.JPG" />
@@ -44,7 +42,7 @@
 </div>
 
 @section Scripts {
-    @Scripts.Render("~/bundles/minusPlus")
+	@Scripts.Render( "~/bundles/minusPlus" )
 }
 
 
