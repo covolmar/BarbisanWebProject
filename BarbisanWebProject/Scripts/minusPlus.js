@@ -40,14 +40,10 @@ $('.input-number').change(function() {
     var maxValue =  parseInt($(this).attr('max'));
 	var valueCurrent = parseInt($(this).val());
 
-	var id = parseInt($(this).attr('name'));
-	var idString = "#box_" + id;
+	var elementId = parseInt($(this).attr('name'));
+	var elementSelectorString = "#box_" + elementId + " .price";
+	var pricePerItem = $(elementSelectorString).attr('data-price');
 
-	var priceString = idString + " .price";
-	var curentValue = $(priceString).html();
-
-	sessionStorage.setItem(idString, curentValue);
-    
     name = $(this).attr('name');
     if(valueCurrent >= minValue) {
         $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
@@ -62,7 +58,7 @@ $('.input-number').change(function() {
         $(this).val($(this).data('oldValue'));
     }
 
-    $('.price').text("Fr. " + valueCurrent + ".-");
+	$(elementSelectorString).text("Fr. " + valueCurrent * pricePerItem + ".-");
     
     
 });
