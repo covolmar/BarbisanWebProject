@@ -7,33 +7,8 @@
   color: #7d8285;
 }
 
-.schalungselement-boxed h2 {
-  font-weight: bold;
-  margin-bottom: 40px;
-  padding-top: 40px;
-  color: inherit;
-}
-
-@media (max-width:767px) {
-  .schalungselement-boxed h2 {
-    margin-bottom: 25px;
-    padding-top: 25px;
-    font-size: 24px;
-  }
-}
-
-.schalungselement-boxed .intro {
-  font-size: 16px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.schalungselement-boxed .intro p {
-  margin-bottom: 0;
-}
-
 .schalungselement-boxed .elemente {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 .schalungselement-boxed .item {
@@ -42,64 +17,32 @@
 
 .schalungselement-boxed .item .box {
   text-align: center;
-  padding: 30px;
+  padding: 25px;
   background-color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .schalungselement-boxed .item .name {
-  font-weight: bold;
   margin-top: 15px;
-  margin-bottom: 8px;
-  color: inherit;
 }
 
-.schalungselement-boxed .item .title {
-  text-transform: uppercase;
-  font-weight: bold;
+.schalungselement-boxed .item .articleNumber {
   color: #d0d0d0;
   letter-spacing: 2px;
-  font-size: 13px;
-}
-
-.schalungselement-boxed .item .description {
-	font-size: 15px;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  font-size: 0.9rem;
 }
 
 .schalungselement-boxed .item img {
-	float: left;
-	max-width: 160px;
+  /*float: left;*/
+  max-width: 160px;
   max-height: 200px;
   margin-right: 5px;
   margin-bottom: 10px;
-
-}
-
-/*.schalungselement-boxed .item minusPlus {
-	clear: both;
-}*/
-
-.schalungselement-boxed .social {
-  font-size: 18px;
-  color: #a2a8ae;
-}
-
-.schalungselement-boxed .social a {
-  color: inherit;
-  margin: 0 10px;
-  display: inline-block;
-  opacity: 0.7;
-}
-
-.schalungselement-boxed .social a:hover {
-  opacity: 1;
 }
 
 .minusPlus {
-    width: 200px;
-    margin: 40px auto;
+    max-width: 200px;
+    margin: 30px auto;
 }
 
 .minusPlus .input-number {
