@@ -10,13 +10,16 @@
 		<div class="row elemente">
 			@foreach( var schalungsElement in Model )
 			{
-				<div class="col-lg-4 item">
-					<div class="box" id="box_@schalungsElement.Id">
-						<img class="img-thumbnail img-fluid" src="~/Pics/TrioPic270x240.JPG" />
-						<h3 class="name">@schalungsElement.Name</h3>
-						<p class="articleNumber">Nr. @schalungsElement.Artikelnummer</p>
-						<p class="description">@schalungsElement.Bezeichnung<br></p>
-						
+				<div class="col-md-6 col-lg-4 item">
+					<div class="box mx-auto" id="box_@schalungsElement.Id">
+						<div class="d-flex justify-content-center">
+							<img class="mr-3 img-thumbnail img-fluid" src="~/Pics/TrioPic270x240.JPG" />
+							<div>
+								<h3 class="name">@schalungsElement.Name</h3>
+								<p class="articleNumber">Nr. @schalungsElement.Artikelnummer</p>
+								<p class="description">@schalungsElement.Bezeichnung<br></p>
+							</div>
+						</div>
 						<h5 class="name">Miete pro Monat</h5>
 						<p class="price" data-price="@schalungsElement.Preis">Fr. @schalungsElement.Preis</p>
 						<div class="minusPlus">
