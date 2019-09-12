@@ -34,7 +34,7 @@ nav {
 }
 
 .barbisanColor {
-	background-color: #901024;
+	background-color: #cb333b;
 }
 
 .navbar img{
@@ -59,8 +59,7 @@ nav {
 	text-transform: none;
 	/*font-weight: bold;
 	font-size: 3rem;*/
-	color: #901024;
-	
+	color: #cb333b;
 }
 
 #header h5 {
@@ -68,7 +67,7 @@ nav {
 	text-transform: none;
 	/*font-weight: bold;*/
 	/*font-size: 3rem;*/
-	color: #901024;
+	color: #cb333b;
 }
 
 #header {
@@ -77,6 +76,24 @@ nav {
 }
 
 
+/* The Image container */
+.img-hover-zoom {
+	/*height: 300px;*/
+	overflow: hidden; /* Removing this will break the effects */
+}
+
+/* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo img {
+	transform-origin: 50% 65%;
+	transition: transform 5s, filter 3s ease-in-out;
+	filter: brightness(150%);
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+	filter: brightness(100%);
+	transform: scale(2);
+}
 
 
 

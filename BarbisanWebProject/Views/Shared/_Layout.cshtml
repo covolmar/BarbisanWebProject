@@ -14,7 +14,9 @@
 	<div class="container-fluid" id="header">
 		@*<h2>Barbisan &amp; Brügger AG </h2>
 		<h5>Mauerwerk und Schalungen</h5>*@
-		<img class="img-fluid" src="~/Logo Schrift.jpg" />
+		<a href="@Url.Action("Index", "Home") ">
+			<img class="img-fluid" src="~/Logo Schrift.jpg" />
+		</a>
 	</div>
 	<nav class="navbar navbar-dark navbar-expand-md shadow-lg sticky-top barbisanColor">
 		<button class="navbar-toggler rounded" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -34,7 +36,7 @@
 		@RenderBody( )
 	</div>
 
-	<footer class="footer-dark">
+	<footer class="footer-dark barbisanColor">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-md-4 item">
