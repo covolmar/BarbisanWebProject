@@ -41,6 +41,14 @@
   margin-bottom: 10px;
 }
 
+.schalungselement-boxed .item img {
+	/*float: left;*/
+	max-width: 160px;
+	max-height: 200px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
 .minusPlus {
     max-width: 200px;
     margin: 30px auto;
