@@ -243,6 +243,7 @@
     <Content Include="Fonts\ionicons.eot" />
     <Content Include="Fonts\ionicons.ttf" />
     <Content Include="Fonts\ionicons.woff" />
+    <None Include="Properties\PublishProfiles\BarbisanWebProject20190913040755 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
