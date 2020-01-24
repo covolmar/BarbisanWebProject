@@ -80,6 +80,7 @@ nav {
 .img-hover-zoom {
 	/*height: 300px;*/
 	overflow: hidden; /* Removing this will break the effects */
+	filter: brightness(150%);
 }
 
 /* Slow-motion Zoom Container */

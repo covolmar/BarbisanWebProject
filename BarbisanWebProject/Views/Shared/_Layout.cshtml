@@ -1,19 +1,19 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>@ViewBag.Title</title>
+	@Styles.Render( "~/Content/css" )
+	@Scripts.Render( "~/bundles/modernizr" )
 
 </head>
 <body>
 	<div class="container-fluid" id="header">
 		@*<h2>Barbisan &amp; Brügger AG </h2>
-		<h5>Mauerwerk und Schalungen</h5>*@
+			<h5>Mauerwerk und Schalungen</h5>*@
 		<a href="@Url.Action("Index", "Home") ">
 			<img class="img-fluid" src="~/Pics/Logo Schrift.jpg" />
 		</a>
@@ -27,19 +27,19 @@
 				<li class="nav-item active">@Html.ActionLink( "Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
 				<li class="nav-item">@Html.ActionLink( "Über uns", "About", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
 				<li class="nav-item">@Html.ActionLink( "Schalungen", "Schalungselemente", "Schalungselement", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
-				<li class="nav-item">@Html.ActionLink( "Kontakt", "Contact", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>
+				@*<li class="nav-item">@Html.ActionLink( "Kontakt", "Contact", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link", style = "color:white" } )</li>*@
 			</ul>
 			@Html.Partial( "_LoginPartial" )
 		</div>
 	</nav>
-	<div class="container body-content">
+	<div class="container min-vh-100 body-content">
 		@RenderBody( )
 	</div>
 
 	<footer class="footer-dark barbisanColor">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-md-4 item">
+				@*<div class="col-sm-6 col-md-4 item">
 					<h3>Services</h3>
 					<ul>
 						<li><a href="#">Web design</a></li>
@@ -54,21 +54,34 @@
 						<li><a href="#">Team</a></li>
 						<li><a href="#">Careers</a></li>
 					</ul>
+				</div>*@
+				<div class="col-sm-12 item text">
+					@*<h3>Kontakt</h3>*@
+					<p>
+						Roger Brügger<br />
+						Lindenstrasse 14<br />
+						6340 Baar<br />
+						Mobil: +41 (0)79 642 62 52 <br />
+						Geschäft: +41 (0)41 769 60 00
+					</p>
+					<p>
+						<strong>E-Mail:</strong>   <a style="color: white" href="mailto:info@barbisan-bruegger.ch">info@barbisan-bruegger.ch</a><br />
+					</p>
 				</div>
-			<div class="col-md-4 item text">
-				<h3>Kontakt</h3>
-				<p>
-					Roger Brügger<br />
-					Lindenstrasse 14<br />
-					6340 Baar<br />
-					Mobil: +41 (0)79 642 62 52 <br />
-					Geschäft: +41 (0)41 769 60 00
-				</p>
-				<p>
-					<strong>E-Mail:</strong>   <a style="color: white" href="mailto:info@barbisan-bruegger.ch">info@barbisan-bruegger.ch</a><br />
-				</p>
-			</div>
-				<div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+				<div class="col item social">
+					<a href="#">
+						<i class="icon ion-social-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="icon ion-social-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="icon ion-social-snapchat"></i>
+					</a>
+					<a href="#">
+						<i class="icon ion-social-instagram"></i>
+					</a>
+				</div>
 			</div>
 			<p class="copyright">Barbisan & Brügger AG © @DateTime.Now.Year</p>
 		</div>

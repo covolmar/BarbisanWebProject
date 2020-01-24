@@ -36,7 +36,8 @@
 }
 
 .footer-dark .item.text {
-  margin-bottom: 36px;
+    margin-bottom: 36px;
+	text-align: center;
 }
 
 @media (max-width:767px) {

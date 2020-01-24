@@ -13,10 +13,13 @@
 		Langjährige Erfahrung, fundiertes Fachwissen und nachhaltige Qualität - das Fundamenthierfür bilden unsere qualifizierten und engagierten Mitarbeiter.
 		Sie sind unser wichtigstes Gut. Barbisan & Brügger AG ist heute in der Erstellung von Maurer- und Schalungsarbeiten tätig.
 	</p>
-	<p><a href="#" class="barbisanColor btn btn-primary btn-lg rounded">Neu Vermietung von Schalungen &raquo;</a></p>
+	<p>
+		@Html.ActionLink( "Neu Vermietung von Schalungen", "Schalungselemente", "Schalungselement", routeValues: null, htmlAttributes: new { @class = "barbisanColor btn btn-primary btn-lg rounded" } )
+		@*<a href="#" class="barbisanColor btn btn-primary btn-lg rounded">Neu Vermietung von Schalungen &raquo;</a>*@
+	</p>
 </div>
-<div class="row">
-	<div class="col rounded-circle img-hover-zoom img-hover-zoom--slowmo">
+<div class="row justify-content-center">
+	<div class="col-md-8 col-sm-12 rounded-circle img-hover-zoom">
 		<img src="~/Pics/5_Area_ex_Appiani_foto_Enrico_Cano.jpg" class="img-fluid rounded-circle shadow-lg" />
 	</div>
 </div>
