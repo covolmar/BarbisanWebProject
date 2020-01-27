@@ -185,7 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pics\5_Area_ex_Appiani_foto_Enrico_Cano.jpg" />
-    <Content Include="Pics\barbiLogi.jpg" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-Lux.css" />
@@ -203,6 +202,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Pics\Logo Schrift.jpg" />
+    <Content Include="Pics\Logo_Mauerwerk.jpg" />
     <Content Include="Pics\Mauer 1920x1080.jpg" />
     <Content Include="Pics\Mauer.JPG" />
     <Content Include="Pics\carousel\069.jpg" />
@@ -217,6 +217,7 @@
     <Content Include="Pics\carousel\Seeblick_009.jpg" />
     <Content Include="Pics\carousel\Seeblick_012.jpg" />
     <Content Include="Pics\carousel\Seeblick_013.jpg" />
+    <Content Include="Pics\Logo Schrift Transparent.png" />
     <Content Include="Pics\TrioPic270x240.JPG" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -243,6 +244,7 @@
     <Content Include="Fonts\ionicons.eot" />
     <Content Include="Fonts\ionicons.ttf" />
     <Content Include="Fonts\ionicons.woff" />
+    <None Include="Properties\PublishProfiles\BarbisanBrueggerWebApp - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\BarbisanWebProject20190913040755 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

@@ -54,25 +54,11 @@ nav {
 	height: 50px;
 }
 
-#header h2 {
-	font-family: 'Gill Sans MT';
-	text-transform: none;
-	/*font-weight: bold;
-	font-size: 3rem;*/
-	color: #cb333b;
-}
-
-#header h5 {
-	font-family: 'Gill Sans MT';
-	text-transform: none;
-	/*font-weight: bold;*/
-	/*font-size: 3rem;*/
-	color: #cb333b;
-}
-
 #header {
 	padding: 10px;
-	background-color: white;
+	background-image: url('../Pics/Mauer 1920x1080.jpg');
+	background-attachment: fixed;
+	background-repeat: repeat;
 }
 
 
